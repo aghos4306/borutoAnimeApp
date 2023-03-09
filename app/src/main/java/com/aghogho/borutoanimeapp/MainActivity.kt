@@ -15,7 +15,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.aghogho.borutoanimeapp.navigation.SetupNavGraph
 import com.aghogho.borutoanimeapp.ui.theme.BorutoAnimeAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     
     private lateinit var navController: NavHostController
@@ -30,5 +32,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-
