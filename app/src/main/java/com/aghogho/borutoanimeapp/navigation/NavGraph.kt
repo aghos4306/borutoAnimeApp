@@ -9,12 +9,14 @@ import androidx.navigation.navArgument
 import com.aghogho.borutoanimeapp.presentation.screens.splash.SplashScreen
 import com.aghogho.borutoanimeapp.presentation.screens.welcome.WelcomeScreen
 import com.aghogho.borutoanimeapp.util.Constants.DETAILS_ARGUMENT_KEY
+import com.google.accompanist.pager.ExperimentalPagerApi
 
+@OptIn(ExperimentalPagerApi::class)
 @Composable
 fun SetupNavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Splash.route
+        startDestination = Screen.Splash.route,
     ) {
         composable(route = Screen.Splash.route) {
             SplashScreen(navController = navController)
