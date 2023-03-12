@@ -26,16 +26,20 @@ import com.aghogho.borutoanimeapp.ui.theme.Purple700
 
 @Composable
 fun SplashScreen(navController: NavHostController) {
-    val degrees = remember { Animatable(0f) }
+    val degrees = remember {
+        Animatable(0f)
+    }
+
     LaunchedEffect(key1 = true) {
         degrees.animateTo(
-            targetValue = 360f,
+            targetValue = 36f,
             animationSpec = tween(
                 durationMillis = 1000,
                 delayMillis = 200
             )
         )
     }
+
     Splash(degrees = degrees.value)
 }
 
