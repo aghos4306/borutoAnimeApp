@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.aghogho.borutoanimeapp.presentation.screens.splash.SplashScreen
+import com.aghogho.borutoanimeapp.presentation.screens.welcome.WelcomeScreen
 import com.aghogho.borutoanimeapp.util.Constants.DETAILS_ARGUMENT_KEY
 
 @Composable
@@ -19,7 +20,7 @@ fun SetupNavGraph(navController: NavHostController) {
             SplashScreen(navController = navController)
         }
         composable(route = Screen.Welcome.route) {
-
+            WelcomeScreen(navController = navController)
         }
         composable(route = Screen.Home.route) {
 
