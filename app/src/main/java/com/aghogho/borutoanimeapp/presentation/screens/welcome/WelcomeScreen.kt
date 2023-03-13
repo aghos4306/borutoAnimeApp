@@ -20,6 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import com.aghogho.borutoanimeapp.domain.model.OnBoardingPage
 import com.aghogho.borutoanimeapp.ui.theme.*
+import com.aghogho.borutoanimeapp.util.Constants.LAST_ON_BOARDING_PAGE
 import com.aghogho.borutoanimeapp.util.Constants.ON_BOARDING_PAGE_COUNT
 import com.google.accompanist.pager.*
 
@@ -120,7 +121,7 @@ fun FinishButton(
     ) {
         AnimatedVisibility(
             modifier = Modifier.fillMaxWidth(),
-            visible = pagerState.currentPage == 2
+            visible = pagerState.currentPage == LAST_ON_BOARDING_PAGE
         ) {
             Button(
                 onClick = onClick ,
