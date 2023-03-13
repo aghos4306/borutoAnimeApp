@@ -1,4 +1,4 @@
-package com.aghogho.borutoanimeapp.data.pref
+package com.aghogho.borutoanimeapp.data.repository
 
 import android.content.Context
 import androidx.datastore.core.DataStore
