@@ -9,7 +9,7 @@ import com.aghogho.borutoanimeapp.domain.model.HeroRemoteKeys
 @Dao
 interface HeroRemoteKeysDao {
 
-    @Query("SELECT * FROM hero_remote_keys_database_table WHERE id= :id")
+    @Query("SELECT * FROM hero_remote_keys_database_table WHERE id= :heroId")
     suspend fun getRemoteKeys(heroId: Int): HeroRemoteKeys
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -19,4 +19,6 @@ interface HeroRemoteKeysDao {
     suspend fun deleteAllRemoteKeys()
 
 }
+
+//jatkaa 51
 

@@ -13,6 +13,7 @@ object Constants {
 
     const val ON_BOARDING_PAGE_COUNT = 3
     const val LAST_ON_BOARDING_PAGE = 2
+    const val NO_OF_ITEMS_PER_PAGE = 3
 
     const val BASE_URL = "http://10.0.2.2:8080"  //http://localhost:8080 wont work
 }
